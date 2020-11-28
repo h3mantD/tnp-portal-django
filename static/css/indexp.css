@@ -1,0 +1,111 @@
+        legend {
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgba(82, 75, 177, 0.589);
+            text-decoration: underline;
+            text-shadow: 3px 2px aqua;
+        }
+        
+        fieldset {
+            background-color: rgba(121, 79, 79, 0.473);
+            margin-right: 25%;
+            margin-left: 25%;
+            margin-top: 8%;
+        }
+        
+        b {
+            color: #e7e7e7;
+        }
+        
+        h1 {
+            color: #e7e7e7;
+        }
+        
+        .button {
+            background-color: #e7e7e7;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        form {
+            border: 10px;
+            top: 50%;
+            left: 50%;
+        }
+        
+        body {
+            background-image: url(4k-wallpaper-dark-dawn-1809644.jpg);
+            background-size: cover;
+        }
+        
+        .txt {
+            display: inline;
+            border-radius: 7px;
+            border-bottom: 3px solid royalblue;
+        }
+        
+        #signup {
+            color: white;
+        }
+        
+        #e_msg {
+            color: #e7e7e7;
+            text-decoration: underline;
+        }
+        
+        div.back {
+            background-color: wheat;
+            opacity: 0.7;
+            border: 2px;
+            border-radius: 15px;
+        }
+        
+        div.img {
+            opacity: 1;
+        }
+        
+        div.head {
+            background-color: black;
+        }
+        
+        .he {
+            color: aliceblue;
+            text-decoration: underline;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        #popup {
+            margin-top: 10%;
+        }
+        
+        #studdata {
+            border-collapse: collapse;
+            width: 30%;
+        }
+        
+        #studdata3,
+        #studdata2 {
+            text-align: center;
+            padding: 8px;
+        }
+        
+        #studdata1:nth-child(even) {
+            background-color: #f2f2f279;
+        }
+        
+        #studdata1:nth-child(odd) {
+            background-color: #f2f2f277;
+        }
+        
+        #studdata3 {
+            background-color: rgba(76, 175, 79, 0.473);
+            color: white;
+        }

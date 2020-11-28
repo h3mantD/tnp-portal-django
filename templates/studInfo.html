@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<form name="form1"  method="POST" action="" novalidate>
+    {% csrf_token %}
+    <fieldset>
+        <legend align=left>Enter Personal Details</legend>
+        <table align="center">
+          {{form.studid}}  
+<tr>    <td><b>First NAME :</b> </td>  <td>{{form.fname}}<br><br></td></tr>
+<tr>    <td><b>Last NAME  :</b></td><td>   {{form.lname}}<br><br></td></tr>
+<tr>    <td><b>BRANCH  :</b></td><td>      {{form.b_name}}<br><br></td></tr>
+<tr>    <td><b>Current Year of Study  :</b></td><td>{{form.cyear}}<br><br></td>
+    <td >{{form.roll.cyear}}</td>
+</tr>
+<tr>
+    <td><b>Roll No :</b> </td>
+    <td>{{form.roll}}<br><br></td>
+    <td >{{form.roll.errors}}</td>
+    </tr>
+
+<tr>    <td><b>ADDRESS  :</b></td><td>{{form.address}}<br><br></td>
+    <td >{{form.address.errors}}</td>
+</tr>
+
+<tr>    <td><b>E-mail     :</b> </td>  <td>{{form.e_mail}}<br><br></td> <td >{{form.e_mail.errors}}</td> </tr>
+<tr>    <td><b>Mob No     :</b> </td>  <td>{{form.mob_no}}<br><br></td> <td >{{form.mob_no.errors}}</td> </tr>
+
+
+<tr>    <td><b>10th Marks   :</b> </td><td>{{form.tenth}}<br><br></td> <td >{{form.tenth.errors}}</td> </tr>
+<tr>    <td><b>12th/Diploma Marks   :</b> </td><td>{{form.twelth}}<br><br></td> <td >{{form.twelth.errors}}</td> </tr>
+ <tr>   <td><b>Average Degree Marks <br>(Till last semester)  :</b> </td><td>{{form.avg_marks}}<br><br></td> <td >{{form.avg_marks.errors}}</td> </tr>
+  <tr>  <td><b>No. of backlogs  :</b></td><td>{{form.nback}}<br><br></td> <td >{{form.nback.errors}}</td> </tr>
+  <tr>  <td><b>Additional Achievements :</b></td><td>{{form.add_info}}</td> <td >{{form.add_info.errors}}</td> </tr>
+
+<tr>
+    <td><input class="button" type="reset" value="Clear" required></td>
+    <td><input class="button" type="submit" value="Submit" required><br></td>
+</tr>     
+
+    </table>
+    </fieldset>
+</form>
+
+{% endblock %}

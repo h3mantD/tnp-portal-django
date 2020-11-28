@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<style>
+    #h {
+        color: wheat;
+    }
+</style>
+
+<!-- <form action="" method="post" novalidate>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Submit</button>
+
+    {% if form.errors %}
+        {% for field in form %}
+        {% for error in field.errors %}
+            <p> {{ errors }} </p>
+        {% endfor %}
+        {% endfor %}
+        {% for error in form.non_field_errors %}
+        <p> {{ error }} </p>
+        {% endfor %}
+    {% endif %}
+
+</form> -->
+<h1 id='h' >
+    Your have cleared the qualifying criteria of <br>
+    following companies
+    <br>
+    [            
+    {% for c in comp %}
+
+    {{c}},
+
+    {% endfor %}
+    ]    
+</h1>
+
+
+<!-- {{form.mob_no.errors}}
+{% if messages  %}
+    {% for m in messages %}
+        {{m}}
+    {% endfor %} 
+{% endif %}
+-->
+{% endblock %}

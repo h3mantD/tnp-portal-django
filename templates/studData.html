@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %} 
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <select class="" name="domain" id="domain">
+        <option value="" disabled selected  >Select company</option>
+        {% for i in comp %}
+            <option value="{{i}}">{{i}}</option>
+        {% endfor %}
+    </select>
+    <input class="button" type="submit" value="view students">
+</form>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Company</th>
+    </tr>
+    {% for x in dataList %}
+    <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.comp}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<h5>Total Number of students placed {{count}}</h5>
+
+
+{% endblock %}
+

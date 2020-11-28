@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block content %} 
+
+
+<h1> Welcome admin </h1>
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <p {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+<a href="shortList"><input class="button" type="button" value="Add Criteria" ></a>
+
+<a href="getStudData"><input class="button" type="button" value="More Options" ></a><br>
+
+{% endblock %}

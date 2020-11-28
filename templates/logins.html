@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block content %}
+
+<h1 id="e_msg">Training And Placement Management System</h1>
+<form name="form1" onsubmit="" method="POST" action="">
+    <fieldset>
+        <legend align=left>Login</legend>
+
+        <a href="{% url 'adminLogin' %}"><input class="button" type="button" value="Admin Login"></a>
+        <a href="{% url 'studLogin' %}"><input class="button" type="button" value="Student Login"> </a><br>
+        <p id="e_msg"></p>
+    </fieldset>
+</form>
+<p id="signup">Don't Have an Account
+    <a href="signup.html"> <b> create an Account</b> </a>
+</p>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+
+
+add error messages tommorow!!!!!!!!!!!!!!!
+
+
+logins.html done
+admin pages
+    * add criteria [done] adding data into database [remaining]
+    * result [remaining]
+
+student pages
+    * all things are not done yet
+
+
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| id        | int(11)      | YES  | MUL | NULL    |       |
+| fname     | char(20)     | YES  |     | NULL    |       |
+| lname     | char(20)     | YES  |     | NULL    |       |
+| b_name    | varchar(20)  | YES  |     | NULL    |       |
+| cyear     | varchar(20)  | YES  |     | NULL    |       |
+| roll      | varchar(10)  | YES  |     | NULL    |       |
+| address   | varchar(900) | YES  |     | NULL    |       |
+| e_mail    | varchar(20)  | YES  |     | NULL    |       |
+| mob_no    | varchar(20)  | YES  |     | NULL    |       |
+| tenth     | varchar(20)  | YES  |     | NULL    |       |
+| twelth    | varchar(20)  | YES  |     | NULL    |       |
+| avg_marks | varchar(20)  | YES  |     | NULL    |       |
+| nback     | varchar(20)  | YES  |     | NULL    |       |
+| add_info  | varchar(900) | YES  |     | NULL    |       |
+| stud_id   | int(5)       | YES  | MUL | NULL    |       |
++-----------+--------------+------+-----+---------+-------+

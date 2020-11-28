@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block content %}
+
+<form name="form1" onsubmit="return check()" method="POST" action="">
+    {% csrf_token %}
+    <fieldset>
+        <legend align=left>Admin Login</legend>
+        <b>USERNAME :</b> <input class="txt" type="text" name="user" required><br><br>
+        <b>PASSWORD :</b> <input class="txt" type="password" name="pass" required><br><br>
+
+        <input class="button" type="reset" value="Reset" required>
+        <input class="button" type="submit" value="Submit" required><br>
+        <p id="e_msg"></p>
+    </fieldset>
+</form>
+
+
+{% endblock %}

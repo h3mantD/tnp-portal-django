@@ -1,0 +1,32 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block content %} 
+
+
+<h1> Welcome admin </h1>
+
+<form name="form1"  method="POST" action="">
+    {% csrf_token %}
+    <fieldset>
+        <legend align=left>Enter Company Criteria</legend>
+        <table align="center">
+
+        <br><br>
+<tr>    <td><b>Company NAME :</b> </td>  <td><input class="txt" type="text" name="cname" title="Enter name of the company" required><br><br></td></tr>
+<tr>    <td><b>Min 10th Marks Required :</b> </td><td>  <input class="txt" type="number" name="10th" title="Enter your 10th Percentage" required><br><br></td></tr>
+<tr>    <td><b>Min 12th/Diploma Marks Required  :</b> </td><td>  <input class="txt" type="number" name="12th" title="Enter your 12th Percentage" required><br><br></td></tr>
+<tr>    <td><b>Min Degree Marks Required :<br>(Till last semester)</b> </td><td>  <input class="txt" type="number" name="degree" title="Enter your SGPA" required><br><br></td></tr>
+<tr>    <td><b>Max No. of backlogs Allowed :</b></td><td> <input class="txt" type="number" name="backlogs" required><br><br></td></tr>
+ 
+
+<tr>
+    <td><input class="button" type="reset" value="Clear" required></td>
+    <td><input class="button" type="submit" value="Shortlist" required><br></td>
+</tr>     
+
+    </table>
+    </fieldset>
+</form>
+
+{% endblock %}
